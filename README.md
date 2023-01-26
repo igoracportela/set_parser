@@ -1,6 +1,6 @@
 # SetParser
 
-With this gem you'll can parse text file easily, input a txt file and output a format hash. It was created with this data below:
+With this gem you'll can parse text file easily, input a txt file and output a formated hash. Check the example below:
 
 ## Input
 ```
