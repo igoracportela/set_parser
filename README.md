@@ -20,9 +20,13 @@ Or install it yourself as:
 
     $ gem install set_parser
 
-## Run
+## Use
 
-In your terminal irb with the gem installed: `ruby call.rb`
+```
+config = ConfigParser.new(filepath: 'your-filepath')
+config.call
+p config.params
+```
 
 ## Development
 

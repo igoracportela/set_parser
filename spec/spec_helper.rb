@@ -12,4 +12,10 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  RSpec::Matchers.define :be_boolean do
+    match do |value|
+      [true, false].include? value
+    end
+  end
 end
