@@ -1,8 +1,37 @@
 # SetParser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/set_parser`. To experiment with that code, run `bin/console` for an interactive prompt.
+With this gem you'll can parse text file easily, input a txt file and output a format hash. It was created with this data below:
 
-TODO: Delete this and the text above, and describe your gem
+## Input
+```
+# This is a comment, ignore it
+# All these config lines are valid
+host = test.com
+server_id=55331
+cost=2.56
+user= user
+# comment can appear here as well
+verbose =true
+test_mode = on
+debug_mode = off
+log_file_path = /tmp/logfile.log
+send_notifications = yes
+```
+
+## Output
+```
+{
+  'host' => 'test.com',
+  'server_id' => 55_331,
+  'cost' => 2.56,
+  'user' => 'user',
+  'verbose' => true,
+  'test_mode' => true,
+  'debug_mode' => false,
+  'log_file_path' => '/tmp/logfile.log',
+  'send_notifications' => true
+}
+```
 
 ## Installation
 
